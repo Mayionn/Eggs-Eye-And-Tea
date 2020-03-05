@@ -8,7 +8,7 @@ public class MainCharacter : MonoBehaviour {
     private int movementSpeed = 5;
     public SpriteRenderer sprite;
 
-    void Update()
+    private void Update()
     {
         //Move right
         if (Input.GetKey(KeyCode.D))
