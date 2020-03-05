@@ -24,8 +24,9 @@ public class MainCharacter : MonoBehaviour {
             sprite.flipX = true;                                                            //flip the sprite if it moves the left AKA press A key
         }
     }
-}    
-    
+}
+
+
 
 
 
