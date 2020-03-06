@@ -8,6 +8,8 @@ public class MainCharacter : MonoBehaviour {
     private int movementSpeed = 5;
     public SpriteRenderer sprite;
 
+    public bool trigger;
+
     private void Update()
     {
         //Move right
@@ -22,6 +24,14 @@ public class MainCharacter : MonoBehaviour {
         {
             transform.Translate(Vector3.left * movementSpeed * Time.deltaTime);
             sprite.flipX = true;                                                            //flip the sprite if it moves the left AKA press A key
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Trigger")
+        {
+            trigger = true;
         }
     }
 }
