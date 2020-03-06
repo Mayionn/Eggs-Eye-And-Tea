@@ -10,7 +10,7 @@ public class SceneChanger : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-		if (GameObject.Find("Character Designn").GetComponent<MainCharacter>().trigger == true)
+		if (GameObject.Find("Main Character").GetComponent<MainCharacter>().trigger == true)
         {
             FadeToLevel(sceneToLoad);
         }
